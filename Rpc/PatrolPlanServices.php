@@ -1,4 +1,5 @@
 <?php
+namespace Rpc;
 
 use Hyperf\Jet\AbstractClient;
 use Hyperf\Jet\NodeSelector\NodeSelector;
@@ -11,15 +12,15 @@ use Hyperf\Rpc\Contract\TransporterInterface;
 use think\facade\Config;
 
 /**
- * WechatMsgServices.php:
+ * PatrolPlanServices.php:
  * Create by: 有你物联：http://community.yoniot.cn/smartcommunity.html
  * User: Mark 437629292@qq.com
  * Date: 2023/4/3
  */
-class WechatMsgServices extends AbstractClient
+class PatrolPlanServices extends AbstractClient
 {
     public function __construct(
-        string $service = 'WechatMsgServices',
+        string $service = 'PatrolPlanServices',
         TransporterInterface $transporter = null,
         PackerInterface $packer = null,
         ?DataFormatterInterface $dataFormatter = null,

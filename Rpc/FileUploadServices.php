@@ -1,4 +1,5 @@
 <?php
+namespace Rpc;
 
 use Hyperf\Jet\AbstractClient;
 use Hyperf\Jet\NodeSelector\NodeSelector;

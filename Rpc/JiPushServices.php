@@ -1,4 +1,5 @@
 <?php
+namespace Rpc;
 
 use Hyperf\Jet\AbstractClient;
 use Hyperf\Jet\NodeSelector\NodeSelector;
@@ -11,15 +12,15 @@ use Hyperf\Rpc\Contract\TransporterInterface;
 use think\facade\Config;
 
 /**
- * WorkOrderServices.php:
+ * JiPushServices.php:
  * Create by: 有你物联：http://community.yoniot.cn/smartcommunity.html
  * User: Mark 437629292@qq.com
  * Date: 2023/4/3
  */
-class WorkOrderServices extends AbstractClient
+class JiPushServices extends AbstractClient
 {
     public function __construct(
-        string $service = 'WorkOrderServices',
+        string $service = 'JiPushServices',
         TransporterInterface $transporter = null,
         PackerInterface $packer = null,
         ?DataFormatterInterface $dataFormatter = null,
